@@ -90,3 +90,6 @@ typings/
 
 # Playground
 /Beocreate2/beo-playground/
+
+# Mac BS
+*.DS_Store

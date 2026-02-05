@@ -1,0 +1,56 @@
+<div class="menu-screen source" id="difm" data-icon="difm.svg" data-menu-title="DIFM">
+	<header>
+		<div class="back-button master" id="return-to-menu"></div>
+		<h1>DI.FM</h1>
+	</header>
+	<div class="scroll-area">
+		<div class="menu-content">
+				<div id="difm-favourites" class="visible">
+				<h2>Favourites</h2>
+				<div id="difm-favourite-items" class="collection"></div>
+			</div>
+			<div id="difm-default" class="visible">
+				<h2>Channels</h2>
+				<div id="difm-default-items" class="collection"></div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript" charset="utf-8" src="€/difm-client.js"></script>
+
+<style type="text/css">
+	.search-results {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: flex-start;
+		padding: 0;
+		margin-right: -5px;
+		margin-left: -5px;
+		transition: opacity 0.3s ease, transform 0.5s cubic-bezier(.18, 0, 0, 1), color 0.3s ease;
+	}
+
+	.search-results li {
+		flex: 1 auto;
+		margin: 5px;
+		padding: 25px;
+		color: white;
+		background: var(--menu-line-opaque-dark);
+		transition: background-color 0.5s ease, opacity 0.5s ease, transform 0.5s cubic-bezier(.18, 0, 0, 1), margin-bottom 0.5s cubic-bezier(.18, 0, 0, 1);
+	}
+
+	.search-results li:hover {
+		background: var(--button-bg);
+		color: var(--menu-line-opaque-dark);
+		cursor: pointer;
+	}
+
+	.search-results li:before,
+	.no-results {
+		display: none;
+	}
+</style>
